@@ -1,0 +1,285 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>web 6 assignment</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header class="hero">
+        <nav class="navbar">
+            <a href="#" class="logo">brighten moments</a>
+            <div class="theme-buttons">
+                <button id="light-theme" class="small-button">Light</button>
+                <button id="dark-theme" class="small-button">Dark</button>
+            </div>
+        </nav>
+
+        <div class="hero-content">
+            <p class="eyebrow">A SPACE FOR YOURSELF</p>
+            <h1 id="main-heading">
+                Welcome to my webpage!
+            </h1>
+            <p class="intro">
+                Small things can make difficult days a little brighter.
+                Let's discover them together.
+            </p>
+
+            <button id="change-heading" class="primary-button">
+                A little reminder
+            </button>
+
+        </div>
+    </header>
+
+
+    <main>
+        <section class="section-card" id="about-section">
+            <p class="eyebrow"> you are not alone </p>
+            <p style="font-size: 15px">
+                Nowadays, many people experience stress, anxiety,
+                tiredness and sadness. University, work, responsibilities
+                and everyday problems can sometimes feel overwhelming.
+            </p>
+            <div id="about-info">
+                <p class="soft-note">
+                    You don't have to be happy all the time.
+                    It's okay to take a break and care for yourself.
+                </p>
+            </div>
+
+            <div class="button-group">
+                <button id="hide" class="secondary-button">Hide</button>
+                <button id="show" class="secondary-button">Show</button>
+                <button id="toggle-info" class="secondary-button">Toggle</button>
+            </div>
+
+        </section>
+
+        <section class="section-card">
+            <p class="eyebrow">things that brighten my days (fade it in)</p>
+            <div class="gallery">
+                <img
+                    class="gallery-img"
+                    src="5420129388050721159.jpg"
+                    alt="movies">
+                <img
+                    class="gallery-img"
+                    src="5420129388050721164.jpg"
+                    alt="girls">
+                <img
+                    class="gallery-img"
+                    src="5420129388050721162.jpg"
+                    alt="rain">
+                <img
+                    class="gallery-img"
+                    src="5420129388050721163.jpg"
+                    alt="yogurt">
+                <img
+                    class="gallery-img"
+                    src="5420129388050721160.jpg"
+                    alt="sunset">
+                <img
+                    class="gallery-img"
+                    src="5420129388050721167.jpg"
+                    alt="rodnie">
+            </div>
+            <div class="button-group">
+                <button id="fade-in" class="secondary-button">Fade In</button>
+                <button id="fade-out" class="secondary-button">Fade Out</button>
+                <button id="fade-toggle" class="secondary-button">Fade Toggle</button>
+            </div>
+        </section>
+
+
+        <section class="section-card">
+            <p class="eyebrow">things that helps me feel better</p>
+            <div class="accordion-item">
+                <h3 class="favorite-heading">
+                    🎵 music
+                </h3>
+                <div class="panel">
+                    <p>
+                        |some calm Kazakh music(ninetyone, moldanazar)
+                    </p>
+                    <p>
+                        |dinamic Western Pop songs
+                    </p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h3 class="favorite-heading">
+                    🎬 movies & series
+                </h3>
+                <div class="panel">
+                    <p>
+                        |romantic kdrama series
+                    </p>
+                    <p>
+                        |old '00 vibe romcom movies
+                    </p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h3 class="favorite-heading">
+                    📱 apps
+                </h3>
+                <div class="panel">
+                    <p>
+                        |funny videos from TikTok
+                    </p>
+                    <p>
+                        |videos from my favourite bloggers
+                    </p>
+                </div>
+            </div>
+
+            <div class="button-group">
+                <button id="open-panel" class="secondary-button">
+                    Open all
+                </button>
+                <button id="close-panel" class="secondary-button">
+                    Close all
+                </button>
+            </div>
+        </section>
+
+
+        <section class="section-card">
+            <p class="eyebrow" style="font-size: 15px;">what also makes YOU feel better usually?</p>
+            <ul id="actions">
+                <li>listening to music</li>
+                <li>watching movies</li>
+                <li>going for a walk</li>
+                <li>spending time with friends</li>
+            </ul>
+
+            <div class="input-group">
+                <input
+                    type="text"
+                    id="action-input"
+                    placeholder="Write your mood booster...">
+
+                <div class="button-group">
+                    <button id="add-skill" class="primary-button">
+                        Add Idea
+                    </button>
+                    <button id="prepend-skill" class="secondary-button">
+                        Add to Priority
+                    </button>
+                    <button id="remove-skill" class="secondary-button">
+                        Remove Last
+                    </button>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section-card">
+            <p class="eyebrow">my email</p>
+            <div class="link-area">
+                <a
+                    id="social-link"
+                    href="https://www.outlook.com"
+                    target="_blank"
+                    rel="noopener noreferrer">
+
+                    message me! ↗
+
+                </a>
+                <button id="change-link" class="secondary-button">
+                    Change Link
+                </button>
+            </div>
+        </section>
+
+
+        <section class="section-card">
+            <p class="eyebrow">let get to know you</p>
+            <form id="contact-form">
+                <label for="name-input">
+                    Write your name:
+                </label>
+                <input
+                    type="text"
+                    id="name-input"
+                    placeholder="Enter your name">
+
+                <label for="email-input">
+                    and your email:
+                </label>
+                <input
+                    type="email"
+                    id="email-input"
+                    placeholder="Enter your email">
+            </form>
+
+            <div class="preview">
+                <p class="eyebrow">thisisyou</p>
+                <p id="name-output">
+                    Your name will appear here
+                </p>
+                <p id="email-output">
+                    Your email will appear here
+                </p>
+            </div>
+        </section>
+
+
+        <section class="section-card">
+            <p class="eyebrow">a little check-in graph </p>
+            <p class="eyebrow"> what helps people feel better mostly</p>
+
+            <div class="graph-item">
+                <div class="graph-label">
+                    <span>Listening to music</span>
+                    <span>85%</span>
+                </div>
+                <div class="graph-bar">
+                    <div id="html-bar" class="skill-fill"></div>
+                </div>
+            </div>
+
+            <div class="graph-item">
+                <div class="graph-label">
+                    <span>Spending time with friends</span>
+                    <span>70%</span>
+                </div>
+                <div class="graph-bar">
+                    <div id="css-bar" class="skill-fill"></div>
+                </div>
+            </div>
+
+            <div class="graph-item">
+                <div class="graph-label">
+                    <span>Watching favourite movies</span>
+                    <span>55%</span>
+                </div>
+                <div class="graph-bar">
+                    <div id="js-bar" class="skill-fill"></div>
+                </div>
+            </div>
+
+            <button id="animate-skills" class="primary-button">
+                Show the Results
+            </button>
+        </section>
+    </main>
+
+
+    <footer>
+        <p>
+            Take care of yourself. You matter♡
+        </p>
+    </footer>
+
+</body>
+</html>
