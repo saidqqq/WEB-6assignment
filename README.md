@@ -29,8 +29,10 @@ Added buttons to hide, show, and toggle the visibility of a text section using "
 
 Task 3 – Fade Effects
 Added buttons to show, hide, and toggle gallery images using ".fadeIn()", ".fadeOut()", and ".fadeToggle()".           
+
 ![3.1](3.1.png)
 ![3.2](3.2.png)
+
 
 Task 4 – Slide Effects
 Created interactive panels for music, movies, and applications. Used ".slideUp()", ".slideDown()", and ".slideToggle()" to open and close the panels.
@@ -38,7 +40,7 @@ Created interactive panels for music, movies, and applications. Used ".slideUp()
 ![4.2](4.2.png)
 
 
-PArt 3.
+Part 3.
 Task 5 – Working with Lists
 Created a list of activities and added buttons to insert new ideas at the beginning or end of the list and remove the last item using ".append()", ".prepend()", and ".remove()".
 ![5](5.png)
